@@ -10,6 +10,7 @@ import {
   NewAccountLinkTypography,
   NewAccountTextTypography,
 } from "./login-footer.styles";
+import Link from "next/link";
 
 const LoginFooter = () => {
   return (
@@ -18,7 +19,9 @@ const LoginFooter = () => {
         <NewAccountTextTypography>
           ¿Nuevo en nuestra plataforma?
         </NewAccountTextTypography>
-        <NewAccountLinkTypography>Crea una cuenta</NewAccountLinkTypography>
+        <Link href="#">
+          <NewAccountLinkTypography>Crea una cuenta</NewAccountLinkTypography>
+        </Link>
       </NewAccountContainer>
       <Divider />
       <LogoContainer>
