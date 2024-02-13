@@ -1,36 +1,17 @@
-import Typography from "@mui/material/Typography";
-import Image from "next/image";
-
 import {
-  BrandContainer,
-  LoginHeaderContainer,
-  Subtitle,
+  HeaderContainer,
+  LoginSubtitle,
+  LoginTitle,
 } from "./login-header.styles";
 
 const LoginHeader = () => {
   return (
-    <LoginHeaderContainer>
-      <Subtitle>
-        <Typography
-          component="h3"
-          sx={{
-            fontSize: 20,
-            fontWeight: 600,
-          }}
-        >
-          ¡Bienvenido a dWine! 👋🏻
-        </Typography>
-        <Typography
-          component="h3"
-          sx={{
-            fontSize: 14,
-            color: "text.secondary",
-          }}
-        >
-          Por favor, inicia sesión en tu cuenta y comienza las pruebas
-        </Typography>
-      </Subtitle>
-    </LoginHeaderContainer>
+    <HeaderContainer>
+      <LoginTitle>¡Bienvenido a dWine! 👋🏻</LoginTitle>
+      <LoginSubtitle>
+        Por favor, inicia sesión en tu cuenta y comienza las pruebas
+      </LoginSubtitle>
+    </HeaderContainer>
   );
 };
 

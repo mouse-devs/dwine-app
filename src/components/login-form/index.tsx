@@ -2,9 +2,12 @@
 import { Controller, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { Box, Divider, TextField, Typography } from "@mui/material";
-import { LoadingButton } from "@mui/lab";
-import Image from "next/image";
+
+import TextField from "@mui/material/TextField";
+
+import ForgotPassword from "../forgot-password";
+
+import { AppLoginButton, LoginContainer } from "./login-form.styles";
 
 const schema = yup.object().shape({
   email: yup.string().email().required(),
@@ -19,22 +22,19 @@ const LoginForm = () => {
   } = useForm({
     resolver: yupResolver(schema),
   });
+
   const onSubmit = (data: { email: string; password: string }) =>
     console.log(data);
+
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        gap: 2,
-      }}
-    >
+    <LoginContainer>
       <Controller
         name="email"
         control={control}
         render={({ field }) => (
           <TextField
             {...field}
+            autoFocus
             fullWidth
             label="Usuario"
             type="email"
@@ -61,70 +61,15 @@ const LoginForm = () => {
           />
         )}
       />
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "flex-end",
-        }}
+      <ForgotPassword />
+      <AppLoginButton
+        fullWidth
+        variant="contained"
+        onClick={handleSubmit(onSubmit)}
       >
-        <Typography variant="body2" color="primary.main">
-          ¿Olvidaste tu contraseña?
-        </Typography>
-      </Box>
-      <Box
-        sx={{
-          my: 1,
-        }}
-      >
-        <LoadingButton
-          fullWidth
-          variant="contained"
-          onClick={handleSubmit(onSubmit)}
-        >
-          Login
-        </LoadingButton>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          gap: 0.5,
-        }}
-      >
-        <Typography variant="body2" color="text.secondary">
-          ¿Nuevo en nuestra plataforma?
-        </Typography>
-        <Typography variant="body2" color="primary.main">
-          Crea una cuenta
-        </Typography>
-      </Box>
-      <Divider />
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 1,
-        }}
-      >
-        <Image
-          src="/dwine-iso-dark.svg"
-          width={30}
-          height={30}
-          alt="dWine Logo"
-        />
-        <Typography
-          component="h1"
-          sx={{
-            fontWeight: 700,
-            fontSize: 20,
-            color: "primary.main",
-          }}
-        >
-          dWine
-        </Typography>
-      </Box>
-    </Box>
+        Login
+      </AppLoginButton>
+    </LoginContainer>
   );
 };
 

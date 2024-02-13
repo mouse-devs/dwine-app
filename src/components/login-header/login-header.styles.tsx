@@ -1,15 +1,18 @@
 "use client";
-import { Box, styled } from "@mui/material";
+import Box from "@mui/material/Box";
+import styled from "@mui/material/styles/styled";
+import Typography from "@mui/material/Typography";
 
-export const LoginHeaderContainer = styled(Box)(({ theme }) => ({
-  marginTop: theme.spacing(1),
-  marginBottom: theme.spacing(3),
+export const HeaderContainer = styled(Box)(({ theme }) => ({
+  margin: theme.spacing(1, 0),
 }));
-export const BrandContainer = styled(Box)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  gap: theme.spacing(2),
-  marginBottom: theme.spacing(3),
+
+export const LoginTitle = styled(Typography)(() => ({
+  fontSize: 20,
+  fontWeight: 600,
 }));
-export const Subtitle = styled(Box)(({ theme }) => ({}));
+
+export const LoginSubtitle = styled(Typography)(({ theme }) => ({
+  fontSize: 14,
+  color: theme.palette.text.secondary,
+}));
