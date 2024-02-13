@@ -1,19 +1,35 @@
-dWine coming soon
+# Project Name
 
-Rosado Profundo: #B5838D <br>
-Beige Oscuro: #A79B8E<br>
-Verde Oliva Oscuro: #6B705C<br>
-Borgoña Oscuro: #885858<br>
-Gris Oscuro: #787878<br>
+A brief description of your project.
 
-Rosado Medio: #D7A9B3<br>
-Beige Pastel Oscuro: #CDBEA7<br>
-Verde Oliva Medio: #8C977D<br>
-Borgoña Pastel: #A6757C<br>
-Gris Medio: #B8B8B8<br>
+## Table of Contents
 
-Rosado Suave: #FADADD<br>
-Crema Pastel: #FFF0E1<br>
-Verde Oliva Pastel: #A3B18A<br>
-Borgoña Claro: #C29CA3<br>
-Gris Pálido: #DADADA<br>
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+1. Clone the repository.
+2. Install the dependencies using `npm install`.
+
+## Usage
+
+1. Start the development server using `npm run dev`.
+2. Open your browser and navigate to `http://localhost:3000`.
+
+## Features
+
+- Feature 1: Description of feature 1.
+- Feature 2: Description of feature 2.
+- ...
+
+## Contributing
+
+Contributions are welcome! Please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
