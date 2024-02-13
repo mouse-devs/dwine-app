@@ -34,6 +34,7 @@ const LoginForm = () => {
         render={({ field }) => (
           <TextField
             {...field}
+            autoFocus
             fullWidth
             label="Usuario"
             type="email"
