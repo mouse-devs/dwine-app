@@ -6,6 +6,9 @@ export const LoginContainer = styled(Box)(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   gap: theme.spacing(2),
+  "& a": {
+    textDecoration: "none",
+  },
 }));
 
 export const AppLoginButton = styled(LoadingButton)(({ theme }) => ({

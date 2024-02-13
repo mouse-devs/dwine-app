@@ -5,9 +5,13 @@ import Typography from "@mui/material/Typography";
 
 export const NewAccountContainer = styled(Box)(({ theme }) => ({
   display: "flex",
+  flexWrap: "wrap",
   justifyContent: "center",
   gap: theme.spacing(0.5),
   margin: theme.spacing(1, 0, 2, 0),
+  "& a": {
+    textDecoration: "none",
+  },
 }));
 
 export const NewAccountTextTypography = styled(Typography)(({ theme }) => ({
