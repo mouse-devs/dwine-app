@@ -9,7 +9,7 @@ const LoginHeader = () => {
     <HeaderContainer>
       <LoginTitle>¡Bienvenido a dWine! 👋🏻</LoginTitle>
       <LoginSubtitle>
-        Por favor, inicia sesión en tu cuenta y comienza las pruebas
+        Por favor, iniciá sesión en tu cuenta y comenzá las pruebas
       </LoginSubtitle>
     </HeaderContainer>
   );

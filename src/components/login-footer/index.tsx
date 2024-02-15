@@ -20,7 +20,7 @@ const LoginFooter = () => {
           ¿Nuevo en nuestra plataforma?
         </NewAccountTextTypography>
         <Link href="#">
-          <NewAccountLinkTypography>Crea una cuenta</NewAccountLinkTypography>
+          <NewAccountLinkTypography>Creá una cuenta</NewAccountLinkTypography>
         </Link>
       </NewAccountContainer>
       <Divider />
